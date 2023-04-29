@@ -100,8 +100,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemySpeed: 5
-  enemyMaxHealth: 0
+  enemyMaxHealth: 2
   enemyCurrentHealth: 0
+  damage: 3
   playerStatusScript: {fileID: 0}
   destinationPoint: {fileID: 0}
 --- !u!58 &2388500585161436493

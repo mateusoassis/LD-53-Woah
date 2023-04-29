@@ -6,8 +6,9 @@ public class EnemyBehaviour : MonoBehaviour
 {
     [Header("Enemy Stats")]
     public float enemySpeed;
-    public float enemyMaxHealth;
-    public float enemyCurrentHealth;
+    public int enemyMaxHealth;
+    public int enemyCurrentHealth;
+    public int damage;
 
     [Header("Enemy References")]
     public PlayerStatus playerStatusScript;
