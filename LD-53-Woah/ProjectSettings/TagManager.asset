@@ -5,7 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+<<<<<<< HEAD
   - Destination
+=======
+  - Sound
+>>>>>>> origin/main
   layers:
   - Default
   - TransparentFX
