@@ -8,5 +8,5 @@ public class ClickScript : MonoBehaviour
     public bool canClick;
 
     [Header("Player Stats")]
-    [SerializeField] private float clickDamage;
+    public int clickDamage;
 }
