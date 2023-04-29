@@ -10,8 +10,10 @@ public class EnemyClicked : MonoBehaviour
     {
         clickHandler = GameObject.Find("ClickHandler").GetComponent<ClickScript>();
     }
+    /*
     void OnMouseDown()
     {
         GetComponent<EnemyBehaviour>().EnemyTakeDamage(clickHandler.clickDamage);
     }
+    */
 }

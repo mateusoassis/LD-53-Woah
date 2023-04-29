@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Enemy
-<<<<<<< HEAD
-  - Destination
-=======
-  - Sound
->>>>>>> origin/main
+  tags: []
   layers:
   - Default
   - TransparentFX
