@@ -1,6 +1,6 @@
 # LD-53-Woah
 
-[Game Desinger] André Luna ([itch.io](https://aggl.itch.io/))
+[Game Designer] André Luna ([itch.io](https://aggl.itch.io/))
 
 [Programmer] George Muniz ([itch.io](https://kalasmus.itch.io))
 
