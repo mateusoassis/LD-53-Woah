@@ -2,7 +2,7 @@
 
 André Luna
 
-George Muniz
+[Programmer] George Muniz (https://kalasmus.itch.io/)
 
 Maria Eduarda Paixão
 
