@@ -9,6 +9,7 @@ TagManager:
   - Haste
   - Freeze
   - Damage
+  - Vitamin
   layers:
   - Default
   - TransparentFX

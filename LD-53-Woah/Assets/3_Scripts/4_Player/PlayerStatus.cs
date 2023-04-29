@@ -17,12 +17,21 @@ public class PlayerStatus : MonoBehaviour
         currentHealth = currentHealth - a;
     }
 
+    public void Heal(int b)
+    {
+        currentHealth = currentHealth + b;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("Chegou");
             TakeDamage(other.gameObject.transform.GetComponent<EnemyBehaviour>().damage);
+            Destroy(other.gameObject);
+        }else if (other.gameObject.CompareTag("Vitamin"))
+        {
+            Heal(other.gameObject.transform.GetComponent<EnemyBehaviour>().damage);
             Destroy(other.gameObject);
         }
     }
