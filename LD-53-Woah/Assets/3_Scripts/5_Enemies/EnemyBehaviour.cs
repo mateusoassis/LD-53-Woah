@@ -13,20 +13,25 @@ public class EnemyBehaviour : MonoBehaviour
     [Header("Enemy References")]
     public PlayerStatus playerStatusScript;
     public Transform destinationPoint;
+
+    public int locationsInTotal;
+
+    int destinationIndex;
+
+    public Transform[] locations;
     
     void Start()
     {
-        destinationPoint = GameObject.Find("DestinationPoint").transform;
+        locationsInTotal = locations.Length;
+        destinationPoint = locations[0];
         playerStatusScript = destinationPoint.transform.GetComponent<PlayerStatus>();
         enemyCurrentHealth = enemyMaxHealth;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+
+    private void Update()
     {
-        Vector2 a = transform.position;
-        Vector2 b = destinationPoint.position;
-        transform.position = Vector2.MoveTowards(a, b, enemySpeed * Time.fixedDeltaTime);
+        SwitchDestination();
     }
 
     public void EnemyTakeDamage(int damageTaken)
@@ -35,6 +40,23 @@ public class EnemyBehaviour : MonoBehaviour
         if(enemyCurrentHealth <= 0)
         {
             Destroy(this.gameObject);
+        }
+    }
+
+    public void SwitchDestination()
+    {
+        if(transform.position == destinationPoint.transform.position) 
+        {
+            destinationIndex++;
+            if(destinationIndex >= locations.Length)
+            {
+                destinationIndex = 0;
+            }
+            destinationPoint = locations[destinationIndex];
+        }
+        else
+        {
+            transform.position = Vector2.MoveTowards(transform.position, destinationPoint.position, enemySpeed * Time.deltaTime);
         }
     }
 }
