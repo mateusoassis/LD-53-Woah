@@ -6,7 +6,7 @@ public class EnemyBehaviour : MonoBehaviour
 {
     public PlayerStatus playerStatusScript;
     public Transform destinationPoint;
-    public float t;
+    public float enemySpeed;
 
 
     void Start()
@@ -19,6 +19,6 @@ public class EnemyBehaviour : MonoBehaviour
     {
         Vector2 a = transform.position;
         Vector2 b = destinationPoint.position;
-        transform.position = Vector2.Lerp(a, b, t);
+        transform.position = Vector2.MoveTowards(a, b, enemySpeed * Time.fixedDeltaTime);
     }
 }

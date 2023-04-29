@@ -353,7 +353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerStatusScript: {fileID: 2033443029}
   destinationPoint: {fileID: 2033443027}
-  t: 0.01
+  enemySpeed: 5
 --- !u!58 &1583604585
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -381,6 +381,7 @@ GameObject:
   - component: {fileID: 2033443027}
   - component: {fileID: 2033443028}
   - component: {fileID: 2033443029}
+  - component: {fileID: 2033443030}
   m_Layer: 0
   m_Name: DestinationPoint
   m_TagString: Destination
@@ -433,3 +434,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalHealth: 100
   currentHealth: 0
+--- !u!50 &2033443030
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033443026}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
