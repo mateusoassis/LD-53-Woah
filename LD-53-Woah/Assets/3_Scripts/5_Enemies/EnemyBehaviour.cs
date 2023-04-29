@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-
+    public PlayerStatus playerStatusScript;
     public Transform destinationPoint;
     public float t;
 
