@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4255e050c91e203459bfe87307b08b83, type: 3}
+  m_Name: Acelerar
+  m_EditorClassIdentifier: 
+  skillArray:
+    skillDamage: 0
+    skillRadius: 5
+    skillCooldown: 4
+    canCast: 0
+    skillIndex: 2
+    skillName: Acelerar
+    skillSound: {fileID: 0}
+    skillPrefab: {fileID: 112463688856522940, guid: 36afc013a97491f48883c0f357f97c35, type: 3}
+    skillCooldownTimer: 3.2556448

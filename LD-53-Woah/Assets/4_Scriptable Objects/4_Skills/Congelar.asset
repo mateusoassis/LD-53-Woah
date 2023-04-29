@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: Congelar
   m_EditorClassIdentifier: 
   skillArray:
-    skillIndex: 0
-    skillName: 
     skillDamage: 0
-    skillRadius: 0
-    skillDuration: 0
-    skillCooldown: 0
+    skillRadius: 4
+    skillCooldown: 5
+    canCast: 0
+    skillIndex: 1
+    skillName: Congelar
     skillSound: {fileID: 0}
-    skillPrefab: {fileID: 0}
-    skillCooldownTimer: 0
-    skillDurationTimer: 0
+    skillPrefab: {fileID: 1066601433876369537, guid: 25ad3e016acf8aa4aa2503bb7fc0f4e8, type: 3}
+    skillCooldownTimer: 2.2803984

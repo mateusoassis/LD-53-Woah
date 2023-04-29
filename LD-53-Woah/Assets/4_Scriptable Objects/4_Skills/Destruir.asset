@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4255e050c91e203459bfe87307b08b83, type: 3}
-  m_Name: Acelerar
+  m_Name: Destruir
   m_EditorClassIdentifier: 
   skillArray:
+    skillDamage: 1
+    skillRadius: 2.5
+    skillCooldown: 4
+    canCast: 1
     skillIndex: 0
-    skillName: 
-    skillDamage: 0
-    skillRadius: 0
-    skillDuration: 0
-    skillCooldown: 0
+    skillName: Destruir
     skillSound: {fileID: 0}
-    skillPrefab: {fileID: 0}
-    skillCooldownTimer: 0
-    skillDurationTimer: 0
+    skillPrefab: {fileID: 4864212520694442883, guid: 1ea097ab0b2d3694489b546425ad5404, type: 3}
+    skillCooldownTimer: 4.00241

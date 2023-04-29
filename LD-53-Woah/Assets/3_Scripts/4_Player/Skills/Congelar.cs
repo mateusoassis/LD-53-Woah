@@ -5,15 +5,23 @@ using UnityEngine;
 public class Congelar : MonoBehaviour
 {
     [SerializeField] private PlayerSkills skill;
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        skill.ZeroCooldownTimer();
+        transform.localScale = new Vector3(skill.skillArray.skillRadius, skill.skillArray.skillRadius, 1f);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if(skill.skillArray.skillCooldownTimer <= skill.skillArray.skillCooldown)
+        {
+            skill.skillArray.skillCooldownTimer += Time.deltaTime;
+            // RefreshCooldown no controle da interface
+        }
+        else if(skill.skillArray.skillCooldownTimer > skill.skillArray.skillCooldown)
+        {
+            skill.skillArray.canCast = true;
+            Destroy(this.gameObject);
+        }
     }
 }

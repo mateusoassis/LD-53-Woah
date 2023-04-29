@@ -8,9 +8,11 @@ public class EnemyClicked : MonoBehaviour
 
     void Awake()
     {
-        clickHandler = GameObject.Find("ClickHandler").GetComponent<ClickScript>();
+
     }
-    /*
+        /*clickHandler = GameObject.Find("ClickHandler").GetComponent<ClickScript>();
+    }
+    
     void OnMouseDown()
     {
         GetComponent<EnemyBehaviour>().EnemyTakeDamage(clickHandler.clickDamage);
