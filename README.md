@@ -8,6 +8,4 @@ Maria Eduarda Paixão
 
 Milena
 
-[Programmer] Mateus Assis (https://mateuzoassis.itch.io & https://www.instagram.com/mateuzoassis/)
-
-[Instagram](https://www.instagram.com/mateuzoassis/)
+[Programmer] Mateus Assis ([itch.io](https://www.instagram.com/mateuzoassis/) & [Instagram](https://www.instagram.com/mateuzoassis/))
