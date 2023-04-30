@@ -17,44 +17,37 @@ public class PlayerStatus : MonoBehaviour
 
     [SerializeField] private SkillHandler skillHandler;
 
-    void Start()
+    void Awake()
     {
         currentHealth = totalHealth;
     }
 
-    void Update()
+    void Start()
     {
+        UpdateHealth();
+    }
 
-        if(totalHealth > numOfBars)
-        {
-            totalHealth = numOfBars;
-        }
-
+    public void UpdateHealth()
+    {
         for(int i = 0; i < healthBars.Length; i++)
         {
-            if(i< totalHealth)
+            if(i < currentHealth)
             {
-                healthBars[i].sprite = greenBar;
-            }
-            else{
-                healthBars[i].sprite = dimBar;
-            }
-
-            if(i < numOfBars)
-            {
-                healthBars[i].enabled = true;
+                healthBars[i].color = Color.white;
             }
             else
             {
-                healthBars[i].enabled = false;
+                healthBars[i].color = Color.black;
             }
         }
     }
+
 
     public void TakeDamage(int a) 
     {
         currentHealth = currentHealth - a;
         cameraShake.CallShake(cameraShake.shakeDuration, cameraShake.shakeMagnitude);
+        UpdateHealth();
     }
 
     public void Heal(int b)
