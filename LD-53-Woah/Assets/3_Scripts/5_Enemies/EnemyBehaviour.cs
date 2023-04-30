@@ -16,6 +16,7 @@ public class EnemyBehaviour : MonoBehaviour
     public PlayerStatus playerStatusScript;
     public Transform destinationPoint;
     public Transform finalDestinationPoint;
+    public GameObject destroyParticle;
 
     public int locationsInTotal;
 
@@ -140,5 +141,10 @@ public class EnemyBehaviour : MonoBehaviour
         {
             haste = true;
         }
+    }
+
+    private void OnDestroy()
+    {
+        GameObject explosion = Instantiate(destroyParticle, transform.position, transform.rotation);
     }
 }

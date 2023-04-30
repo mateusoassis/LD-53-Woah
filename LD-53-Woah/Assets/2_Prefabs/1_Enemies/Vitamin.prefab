@@ -106,6 +106,7 @@ MonoBehaviour:
   playerStatusScript: {fileID: 0}
   destinationPoint: {fileID: 0}
   finalDestinationPoint: {fileID: 0}
+  destroyParticle: {fileID: 8041632234770621619, guid: 897bc8dc1c292ad4096545a30ccf411f, type: 3}
   locationsInTotal: 0
   locations:
   - {fileID: 0}

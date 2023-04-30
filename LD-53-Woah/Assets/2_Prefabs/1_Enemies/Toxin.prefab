@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2388500585161436493}
   - component: {fileID: 652185732735923864}
   m_Layer: 0
-  m_Name: PlainEnemy
+  m_Name: Toxin
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,6 +107,7 @@ MonoBehaviour:
   playerStatusScript: {fileID: 0}
   destinationPoint: {fileID: 0}
   finalDestinationPoint: {fileID: 0}
+  destroyParticle: {fileID: 7233136749741440075, guid: effe4839692b2ef4e80728b19dc85085, type: 3}
   locationsInTotal: 0
   locations:
   - {fileID: 0}
