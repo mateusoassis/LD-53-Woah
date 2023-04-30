@@ -15,6 +15,7 @@ public class EnemyBehaviour : MonoBehaviour
     public float enemyRealSpeed;
     public PlayerStatus playerStatusScript;
     public Transform destinationPoint;
+    public Transform finalDestinationPoint;
 
     public int locationsInTotal;
 
@@ -38,7 +39,8 @@ public class EnemyBehaviour : MonoBehaviour
     void Start()
     {
         locationsInTotal = locations.Length;
-        destinationPoint = GameObject.Find("DestinationPoint").GetComponent<Transform>();
+        destinationPoint = locations[0];
+        finalDestinationPoint = GameObject.Find("DestinationPoint").GetComponent<Transform>();
         playerStatusScript = destinationPoint.transform.GetComponent<PlayerStatus>();
         enemyCurrentHealth = enemyMaxHealth;
         enemyRealSpeed = enemySpeed;
@@ -65,16 +67,17 @@ public class EnemyBehaviour : MonoBehaviour
         if(transform.position == destinationPoint.transform.position) 
         {
             destinationIndex++;
-            if(destinationIndex >= locations.Length)
+            if(destinationIndex >= locationsInTotal)
             {
                 destinationIndex = 0;
             }
             destinationPoint = locations[destinationIndex];
         }
-        /*else
+        else
         {
+            Debug.Log(destinationIndex);
             transform.position = Vector2.MoveTowards(transform.position, destinationPoint.position, enemyRealSpeed * factor * Time.deltaTime);
-        }*/
+        }
     }
     
     public void HandleFactor()
