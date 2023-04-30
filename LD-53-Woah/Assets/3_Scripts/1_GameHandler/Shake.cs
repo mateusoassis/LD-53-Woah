@@ -6,9 +6,11 @@ public class Shake : MonoBehaviour
 {
     public float shakeDuration;
     public float shakeMagnitude;
+    private Vector3 startPos;
     void Start()
     {
         //CallShake(shakeDuration, shakeMagnitude);
+        startPos = transform.localPosition;
     }
 
     public void CallShake(float duration, float magnitude)
@@ -35,5 +37,11 @@ public class Shake : MonoBehaviour
         }
 
         transform.localPosition = originalPos;
+    }
+
+    public void StopShake()
+    {
+        StopAllCoroutines();
+        transform.localPosition = startPos;
     }
 }

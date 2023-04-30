@@ -7,6 +7,7 @@ public class PauseHandler : MonoBehaviour
     [Header("Flags")]
     public bool paused;
     public bool dialogue;
+    public bool playerLost;
 
     [Header("References")]
     [SerializeField] private GameObject pauseObject;

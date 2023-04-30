@@ -10,6 +10,7 @@ public class SceneChanger : MonoBehaviour
     [SerializeField] private string introName;
     [SerializeField] private string menuName;
     [SerializeField] private string gameTutorialStartName;
+    [SerializeField] private string nextScene;
 
     // 0 = intro
     // 1 = menu
@@ -28,6 +29,10 @@ public class SceneChanger : MonoBehaviour
     public void SwapToGame()
     {
         SceneManager.LoadScene(gameTutorialStartName);
+    }
+    public void SwapToNextScene()
+    {
+        SceneManager.LoadScene(nextScene);
     }
 
     public void QuitGame()

@@ -48,6 +48,7 @@ public class PlayerStatus : MonoBehaviour
         currentHealth = currentHealth - a;
         cameraShake.CallShake(cameraShake.shakeDuration, cameraShake.shakeMagnitude);
         UpdateHealth();
+        GameObject.Find("GameHandler").GetComponent<LoseHandler>().DidPlayerLost();
     }
 
     public void Heal(int b)
