@@ -71,10 +71,10 @@ public class EnemyBehaviour : MonoBehaviour
             }
             destinationPoint = locations[destinationIndex];
         }
-        else
+        /*else
         {
             transform.position = Vector2.MoveTowards(transform.position, destinationPoint.position, enemyRealSpeed * factor * Time.deltaTime);
-        }
+        }*/
     }
     
     public void HandleFactor()
