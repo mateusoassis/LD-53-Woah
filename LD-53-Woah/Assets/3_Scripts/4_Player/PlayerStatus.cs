@@ -6,6 +6,7 @@ public class PlayerStatus : MonoBehaviour
 {
     public int totalHealth;
     public int currentHealth;
+    public Shake cameraShake;
 
     [SerializeField] private SkillHandler skillHandler;
 
@@ -17,6 +18,7 @@ public class PlayerStatus : MonoBehaviour
     public void TakeDamage(int a) 
     {
         currentHealth = currentHealth - a;
+        cameraShake.CallShake(cameraShake.shakeDuration, cameraShake.shakeMagnitude);
     }
 
     public void Heal(int b)

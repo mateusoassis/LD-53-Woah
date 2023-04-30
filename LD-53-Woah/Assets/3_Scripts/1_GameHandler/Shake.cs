@@ -8,7 +8,7 @@ public class Shake : MonoBehaviour
     public float shakeMagnitude;
     void Start()
     {
-        CallShake(shakeDuration, shakeMagnitude);
+        //CallShake(shakeDuration, shakeMagnitude);
     }
 
     public void CallShake(float duration, float magnitude)

@@ -38,7 +38,7 @@ public class EnemyBehaviour : MonoBehaviour
     void Start()
     {
         locationsInTotal = locations.Length;
-        destinationPoint = locations[0];
+        destinationPoint = GameObject.Find("DestinationPoint").GetComponent<Transform>();
         playerStatusScript = destinationPoint.transform.GetComponent<PlayerStatus>();
         enemyCurrentHealth = enemyMaxHealth;
         enemyRealSpeed = enemySpeed;
