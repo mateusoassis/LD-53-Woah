@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStatus : MonoBehaviour
 {
@@ -8,11 +9,46 @@ public class PlayerStatus : MonoBehaviour
     public int currentHealth;
     public Shake cameraShake;
 
+    public int numOfBars;
+
+    public Image[] healthBars;
+    public Sprite greenBar;
+    public Sprite dimBar;
+
     [SerializeField] private SkillHandler skillHandler;
 
     void Start()
     {
         currentHealth = totalHealth;
+    }
+
+    void Update()
+    {
+
+        if(totalHealth > numOfBars)
+        {
+            totalHealth = numOfBars;
+        }
+
+        for(int i = 0; i < healthBars.Length; i++)
+        {
+            if(i< totalHealth)
+            {
+                healthBars[i].sprite = greenBar;
+            }
+            else{
+                healthBars[i].sprite = dimBar;
+            }
+
+            if(i < numOfBars)
+            {
+                healthBars[i].enabled = true;
+            }
+            else
+            {
+                healthBars[i].enabled = false;
+            }
+        }
     }
 
     public void TakeDamage(int a) 
