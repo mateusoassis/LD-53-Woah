@@ -31,7 +31,8 @@ public class Destruir : MonoBehaviour
     {
         if(other.gameObject.CompareTag("GorduraPlus"))
         {
-            playerStatus.HasteResetCooldown();
+            //playerStatus.HasteResetCooldown();
+            playerStatus.TakeDamage(1);
             Destroy(other.gameObject);
             GetComponent<CircleCollider2D>().enabled = false;
         }
