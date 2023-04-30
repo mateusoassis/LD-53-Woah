@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SkillHandler : MonoBehaviour
 {
     [SerializeField] private int selectedSkill;
+    [SerializeField] private PauseHandler pauseHandler;
 
     [System.Serializable]
     public class SkillUI
@@ -21,6 +22,7 @@ public class SkillHandler : MonoBehaviour
         {
             skillUI[i].skill.Starting();
         }
+        pauseHandler = GameObject.Find("GameHandler").GetComponent<PauseHandler>();
     }
 
     void Update()
@@ -39,24 +41,27 @@ public class SkillHandler : MonoBehaviour
 
     public void Inputs()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1))
+        if(!pauseHandler.paused)
         {
-            selectedSkill = 0;
-        }
-        else if(Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            selectedSkill = 1;
-        }
-        else if(Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            selectedSkill = 2;
-        }
+            if(Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                selectedSkill = 0;
+            }
+            else if(Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                selectedSkill = 1;
+            }
+            else if(Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                selectedSkill = 2;
+            }
 
-        if(Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            mousePos.z = 0;
-            skillUI[selectedSkill].skill.CastSkill(mousePos);
+            if(Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                mousePos.z = 0;
+                skillUI[selectedSkill].skill.CastSkill(mousePos);
+            }
         }
     }
 }
