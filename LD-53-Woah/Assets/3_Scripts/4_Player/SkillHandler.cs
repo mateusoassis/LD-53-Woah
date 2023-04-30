@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SkillHandler : MonoBehaviour
 {
     [SerializeField] private int selectedSkill;
+
     [System.Serializable]
     public class SkillUI
     {

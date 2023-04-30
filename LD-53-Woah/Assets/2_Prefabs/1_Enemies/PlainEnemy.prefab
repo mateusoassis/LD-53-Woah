@@ -102,7 +102,8 @@ MonoBehaviour:
   enemySpeed: 1
   enemyMaxHealth: 2
   enemyCurrentHealth: 0
-  damage: 3
+  damage: 1
+  enemyRealSpeed: 0
   playerStatusScript: {fileID: 0}
   destinationPoint: {fileID: 0}
   locationsInTotal: 0
@@ -118,6 +119,7 @@ MonoBehaviour:
   freezeFactor: 2
   freezeDuration: 5
   freezeDurationTimer: 0
+  factor: 0
   freeze: 0
   haste: 0
 --- !u!58 &2388500585161436493
@@ -130,7 +132,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0007479986, y: 0}

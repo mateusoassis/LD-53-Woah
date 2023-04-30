@@ -40,7 +40,6 @@ public class PlayerSkills : ScriptableObject
             GameObject skill = Instantiate(skillArray.skillPrefab, pos, Quaternion.identity);
             ZeroCooldownTimer();    
         }
-        
     }
 
     public void ZeroCooldownTimer()

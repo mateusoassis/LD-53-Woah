@@ -8,8 +8,10 @@ TagManager:
   - Enemy
   - Haste
   - Freeze
-  - Damage
   - Vitamin
+  - Destroy
+  - Gordura
+  - GorduraPlus
   layers:
   - Default
   - TransparentFX
