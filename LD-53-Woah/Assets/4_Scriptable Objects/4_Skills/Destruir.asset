@@ -16,9 +16,9 @@ MonoBehaviour:
     skillDamage: 1
     skillRadius: 2.5
     skillCooldown: 4
-    canCast: 1
+    canCast: 0
     skillIndex: 0
     skillName: Destruir
     skillSound: {fileID: 0}
     skillPrefab: {fileID: 4864212520694442883, guid: 1ea097ab0b2d3694489b546425ad5404, type: 3}
-    skillCooldownTimer: 4.00241
+    skillCooldownTimer: 1.7852343
