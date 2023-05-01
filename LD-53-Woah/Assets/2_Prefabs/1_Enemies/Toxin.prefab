@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2388500585161436492}
   - component: {fileID: 2388500585161436493}
   - component: {fileID: 652185732735923864}
+  - component: {fileID: 2432439458000641472}
   m_Layer: 0
   m_Name: Toxin
   m_TagString: Enemy
@@ -108,6 +109,7 @@ MonoBehaviour:
   destinationPoint: {fileID: 0}
   finalDestinationPoint: {fileID: 0}
   destroyParticle: {fileID: 7233136749741440075, guid: effe4839692b2ef4e80728b19dc85085, type: 3}
+  playerStatus: {fileID: 0}
   locationsInTotal: 0
   locations:
   - {fileID: 0}
@@ -152,3 +154,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce29e619fd711d247b91450b5376cd91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &2432439458000641472
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2388500585161436481}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 90ea31250978c8c43af3d26f6b7d6e8f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
