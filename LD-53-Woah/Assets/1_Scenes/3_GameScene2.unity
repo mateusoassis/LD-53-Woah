@@ -1979,7 +1979,7 @@ MonoBehaviour:
   dimBar: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   skillHandler: {fileID: 0}
   robotHandler: {fileID: 0}
-  enemyCounter: 21
+  enemyCounter: 9
   nextMap: {fileID: 0}
 --- !u!58 &852281119
 CircleCollider2D:
@@ -4704,6 +4704,14 @@ PrefabInstance:
     - target: {fileID: 8149460359070092250, guid: 38a2d862be7ca4f45a86f29f87c0c9db, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8149460359159030530, guid: 38a2d862be7ca4f45a86f29f87c0c9db, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 39.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8149460359159030531, guid: 38a2d862be7ca4f45a86f29f87c0c9db, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8149460359690398670, guid: 38a2d862be7ca4f45a86f29f87c0c9db, type: 3}
       propertyPath: m_Pivot.x
