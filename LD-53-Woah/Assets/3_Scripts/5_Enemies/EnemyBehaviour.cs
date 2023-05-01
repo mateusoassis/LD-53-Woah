@@ -13,7 +13,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     [Header("Enemy References")]
     public float enemyRealSpeed;
-    public PlayerStatus playerStatusScript;
+    //public PlayerStatus playerStatusScript;
     public Transform destinationPoint;
     public Transform finalDestinationPoint;
     public GameObject destroyParticle;
@@ -38,13 +38,18 @@ public class EnemyBehaviour : MonoBehaviour
     public bool freeze;
     public bool haste;
     
+    void Awake()
+    {
+        playerStatus = GameObject.Find("DestinationPoint").GetComponent<PlayerStatus>();
+    }
+
     void Start()
     {
         locationsInTotal = locations.Length;
         destinationPoint = locations[0];
         finalDestinationPoint = GameObject.Find("DestinationPoint").GetComponent<Transform>();
         playerStatus = GameObject.Find("DestinationPoint").GetComponent<PlayerStatus>();
-        playerStatusScript = destinationPoint.transform.GetComponent<PlayerStatus>();
+        //playerStatusScript = destinationPoint.transform.GetComponent<PlayerStatus>();
         enemyCurrentHealth = enemyMaxHealth;
         enemyRealSpeed = enemySpeed;
     }

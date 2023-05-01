@@ -15,8 +15,8 @@ public class PlayerStatus : MonoBehaviour
     public Sprite greenBar;
     public Sprite dimBar;
 
-    [SerializeField] private SkillHandler skillHandler;
-    [SerializeField] private RobotHandler robotHandler;
+    public SkillHandler skillHandler;
+    public RobotHandler robotHandler;
 
     [SerializeField] public int enemyCounter;
 
@@ -26,6 +26,8 @@ public class PlayerStatus : MonoBehaviour
     {
         currentHealth = totalHealth;
         //nextMap = GameObject.Find("NextMap");
+        skillHandler = GameObject.Find("PlayerHandler").GetComponent<SkillHandler>();
+        robotHandler = GameObject.Find("RobotImage").GetComponent<RobotHandler>();
     }
 
     void Start()
