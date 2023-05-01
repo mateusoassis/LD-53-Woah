@@ -11,6 +11,7 @@ public class PauseHandler : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private GameObject pauseObject;
+    [SerializeField] private SkillHandler skill;
     void Update()
     {
         if(!dialogue)
@@ -34,11 +35,13 @@ public class PauseHandler : MonoBehaviour
         Time.timeScale = 0;
         paused = true;
         pauseObject.SetActive(true);
+        skill.ShowMouseCursor();
     }
     public void ResumeGame()
     {
         Time.timeScale = 1;
         paused = false;
         pauseObject.SetActive(false);
+        skill.SwapSkills(skill.selectedSkill);
     }
 }

@@ -6,7 +6,8 @@ public class Shake : MonoBehaviour
 {
     public float shakeDuration;
     public float shakeMagnitude;
-    private Vector3 startPos;
+    public Vector3 startPos;
+
     void Start()
     {
         //CallShake(shakeDuration, shakeMagnitude);
@@ -36,7 +37,7 @@ public class Shake : MonoBehaviour
             yield return null;
         }
 
-        transform.localPosition = originalPos;
+        transform.localPosition = startPos;
     }
 
     public void StopShake()

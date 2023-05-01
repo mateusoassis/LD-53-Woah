@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SkillHandler : MonoBehaviour
 {
-    [SerializeField] private int selectedSkill;
+    public int selectedSkill;
     [SerializeField] private PauseHandler pauseHandler;
     public bool mouseCanShoot;
     public AudioClipManager sound;
@@ -15,6 +15,7 @@ public class SkillHandler : MonoBehaviour
     {
         public Image image;
         public PlayerSkills skill;
+        public GameObject mouse;
     }
     public SkillUI[] skillUI;
 
@@ -31,6 +32,8 @@ public class SkillHandler : MonoBehaviour
     void Start()
     {
         mouseCanShoot = true;
+        SwapSkills(selectedSkill);
+        Cursor.visible = false;
     }
 
     void Update()
@@ -74,6 +77,7 @@ public class SkillHandler : MonoBehaviour
                 {
                     sound.PlayOneShot("SkillSwitch");
                     selectedSkill = 0;
+                    SwapSkills(selectedSkill);
                 }  
             }
             else if(Input.GetKeyDown(KeyCode.Alpha2))
@@ -82,6 +86,7 @@ public class SkillHandler : MonoBehaviour
                 {
                     sound.PlayOneShot("SkillSwitch");
                     selectedSkill = 1;
+                    SwapSkills(selectedSkill);
                 }     
             }
             else if(Input.GetKeyDown(KeyCode.Alpha3))
@@ -90,6 +95,7 @@ public class SkillHandler : MonoBehaviour
                 {
                     sound.PlayOneShot("SkillSwitch");
                     selectedSkill = 2;
+                    SwapSkills(selectedSkill);
                 }                
             }
 
@@ -104,4 +110,33 @@ public class SkillHandler : MonoBehaviour
             }
         }
     }
+
+    
+    public void SwapSkills(int a)
+    {
+        for (int i = 0; i < skillUI.Length; i++)
+        {
+            if(i == a)
+            {
+                skillUI[i].mouse.SetActive(true);
+            }
+            else
+            {
+                skillUI[i].mouse.SetActive(false);
+            }
+        }
+        Cursor.visible = false;
+    }
+    public void ShowMouseCursor()
+    {
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+        for (int i = 0; i < skillUI.Length; i++)
+        {
+            {
+                skillUI[i].mouse.SetActive(false);
+            }
+        }
+        Cursor.visible = true;
+    }
+    
 }

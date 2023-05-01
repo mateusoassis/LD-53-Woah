@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7061841841908793242}
   - component: {fileID: 7061841841908793243}
   - component: {fileID: 971919080355121125}
+  - component: {fileID: 3499453305828422694}
   m_Layer: 0
   m_Name: Fat
   m_TagString: Enemy
@@ -140,3 +141,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3499453305828422694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7061841841908793240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceaa402a9aa7dc542a681b3d3aea238f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fatPlusPrefab: {fileID: 6527598244594432757, guid: 7da2c40e88812ba498be8a82313cc15e, type: 3}
