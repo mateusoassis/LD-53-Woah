@@ -48,7 +48,7 @@ public class EnemyBehaviour : MonoBehaviour
         locationsInTotal = locations.Length;
         destinationPoint = locations[0];
         finalDestinationPoint = GameObject.Find("DestinationPoint").GetComponent<Transform>();
-        playerStatus = GameObject.Find("DestinationPoint").GetComponent<PlayerStatus>();
+        //playerStatus = GameObject.Find("DestinationPoint").GetComponent<PlayerStatus>();
         //playerStatusScript = destinationPoint.transform.GetComponent<PlayerStatus>();
         enemyCurrentHealth = enemyMaxHealth;
         enemyRealSpeed = enemySpeed;
