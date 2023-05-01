@@ -8,6 +8,7 @@ public class SkillHandler : MonoBehaviour
     [SerializeField] private int selectedSkill;
     [SerializeField] private PauseHandler pauseHandler;
     public bool mouseCanShoot;
+    public AudioClipManager sound;
 
     [System.Serializable]
     public class SkillUI
@@ -24,6 +25,7 @@ public class SkillHandler : MonoBehaviour
             skillUI[i].skill.Starting();
         }
         pauseHandler = GameObject.Find("GameHandler").GetComponent<PauseHandler>();
+        sound = GameObject.Find("SoundManager").GetComponent<AudioClipManager>();
     }
 
     void Start()
@@ -68,15 +70,27 @@ public class SkillHandler : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.Alpha1))
             {
-                selectedSkill = 0;
+                if(selectedSkill != 0)
+                {
+                    sound.PlayOneShot("SkillSwitch");
+                    selectedSkill = 0;
+                }  
             }
             else if(Input.GetKeyDown(KeyCode.Alpha2))
             {
-                selectedSkill = 1;
+                if(selectedSkill != 1)
+                {
+                    sound.PlayOneShot("SkillSwitch");
+                    selectedSkill = 1;
+                }     
             }
             else if(Input.GetKeyDown(KeyCode.Alpha3))
             {
-                selectedSkill = 2;
+                if(selectedSkill != 2)
+                {
+                    sound.PlayOneShot("SkillSwitch");
+                    selectedSkill = 2;
+                }                
             }
 
             if(Input.GetKeyDown(KeyCode.Mouse0))

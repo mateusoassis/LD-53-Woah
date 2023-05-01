@@ -58,9 +58,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundArray:
-  - name: 
-    clip: {fileID: 0}
+  - name: DealDamage
+    clip: {fileID: 8300000, guid: 7851b77e498f980459869d26e60b295b, type: 3}
     source: {fileID: 0}
-    volume: 0
-    pitch: 0
+    volume: 1
+    pitch: 1
     loop: 0
+  - name: MainMenu
+    clip: {fileID: 8300000, guid: 8868429b771b46f4382a533b58a11782, type: 3}
+    source: {fileID: 0}
+    volume: 0.3
+    pitch: 1
+    loop: 1
+  - name: SkillSwitch
+    clip: {fileID: 8300000, guid: d4ea85148485f9040971edfa640a454a, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: TakeDamage
+    clip: {fileID: 8300000, guid: 3fa1750fb364eed429c906385870776f, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: ResetSkill
+    clip: {fileID: 8300000, guid: 0db03a6285c546b42bc1054d2419ac14, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: TransformFat
+    clip: {fileID: 8300000, guid: d74dacb55d4553d468e8d675498bb946, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: BlueSong
+    clip: {fileID: 8300000, guid: 1b7bcc7cccb6e3e41b5b43ec842f6e22, type: 3}
+    source: {fileID: 0}
+    volume: 0.3
+    pitch: 1
+    loop: 1
+  - name: MinorHarmonicSong
+    clip: {fileID: 8300000, guid: 4d1b005e70be705448225d50be412f6b, type: 3}
+    source: {fileID: 0}
+    volume: 0.3
+    pitch: 1
+    loop: 1

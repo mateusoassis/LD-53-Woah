@@ -66,6 +66,7 @@ public class PlayerStatus : MonoBehaviour
         robotHandler.takenDamage = true;
         robotHandler.TakenDamageSprite();
         robotHandler.ResetIdleTimer();
+        skillHandler.sound.PlayOneShot("TakeDamage");
     }
 
     public void Heal(int b)
@@ -78,18 +79,21 @@ public class PlayerStatus : MonoBehaviour
         // skill index 0
         skillHandler.skillUI[0].skill.skillArray.skillCooldownTimer = skillHandler.skillUI[0].skill.skillArray.skillCooldown;
         skillHandler.skillUI[0].skill.skillArray.canCast = true;
+        skillHandler.sound.PlayOneShot("ResetSkill");
     }
     public void FreezeResetCooldown()
     {
         // skill index 1
         skillHandler.skillUI[1].skill.skillArray.skillCooldownTimer = skillHandler.skillUI[1].skill.skillArray.skillCooldown;
         skillHandler.skillUI[1].skill.skillArray.canCast = true;
+        skillHandler.sound.PlayOneShot("ResetSkill");
     }
     public void HasteResetCooldown()
     {
         // skill index 2
         skillHandler.skillUI[2].skill.skillArray.skillCooldownTimer = skillHandler.skillUI[2].skill.skillArray.skillCooldown;
         skillHandler.skillUI[2].skill.skillArray.canCast = true;
+        skillHandler.sound.PlayOneShot("ResetSkill");
     }
 
     private void OnTriggerEnter2D(Collider2D other)

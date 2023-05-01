@@ -2113,6 +2113,7 @@ GameObject:
   - component: {fileID: 544017472}
   - component: {fileID: 544017473}
   - component: {fileID: 544017475}
+  - component: {fileID: 544017476}
   m_Layer: 0
   m_Name: GameHandler
   m_TagString: Untagged
@@ -2183,6 +2184,24 @@ MonoBehaviour:
   playerStatus: {fileID: 0}
   loseObject: {fileID: 2127590830}
   pauseHandler: {fileID: 0}
+--- !u!114 &544017476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544017471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b3dd95da7dfbb948aa5b357910f344f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 0}
+  menuSceneName: 1_MenuScene
+  hardGameSceneName: 
+  menuMusic: 0
+  gameMusic: 0
+  hardGameMusic: 0
 --- !u!1001 &551759368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6241,6 +6260,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedSkill: 0
   pauseHandler: {fileID: 0}
+  mouseCanShoot: 0
+  sound: {fileID: 0}
   skillUI:
   - image: {fileID: 924747430}
     skill: {fileID: 11400000, guid: 58de3bb4cfbf8ce4a8de7ef6b22c55f1, type: 2}
