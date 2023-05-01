@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8433542755202873223}
   - component: {fileID: 895199918700678828}
   - component: {fileID: -745899894703452516}
+  - component: {fileID: 1963290318919818145}
   m_Layer: 0
   m_Name: AcelerarSkill
   m_TagString: Haste
@@ -137,3 +138,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1963290318919818145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112463688856522940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31058e6c59b69e4bb4a0c625753afe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
