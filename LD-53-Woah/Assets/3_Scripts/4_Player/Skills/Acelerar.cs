@@ -5,6 +5,7 @@ using UnityEngine;
 public class Acelerar : MonoBehaviour
 {
     [SerializeField] private PlayerSkills skill;
+    [SerializeField] private GameObject parent;
     void Awake()
     {
         skill.ZeroCooldownTimer();
@@ -24,7 +25,7 @@ public class Acelerar : MonoBehaviour
         if(skill.skillArray.skillCooldownTimer > skill.skillArray.skillCooldown)
         {
             skill.skillArray.canCast = true;
-            Destroy(this.gameObject);
+            Destroy(parent);
         }
     }
 }

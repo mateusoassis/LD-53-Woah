@@ -7,10 +7,16 @@ public class LevelSelectorHandler : MonoBehaviour
 {
     [SerializeField] private GameObject levelSelectorObject;
     [SerializeField] private string[] levelNames;
+    [SerializeField] private PlayerInfo playerInfo;
 
     public void ChangeToLevel(int a)
     {
         SceneManager.LoadScene(levelNames[a]);
+    }
+
+    public void PlayMaxLevel()
+    {
+        SceneManager.LoadScene(levelNames[playerInfo.levelsUnlocked]);
     }
 
     public void OpenLevelSelector()

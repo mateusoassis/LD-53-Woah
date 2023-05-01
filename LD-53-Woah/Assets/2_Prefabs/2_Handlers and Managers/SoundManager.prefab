@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4383688259143525985}
   - component: {fileID: 4383688259143526014}
   - component: {fileID: 4751854364856572234}
+  - component: {fileID: 2638080177104535374}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Sound
@@ -112,3 +113,15 @@ MonoBehaviour:
     volume: 0.8
     pitch: 1
     loop: 0
+--- !u!114 &2638080177104535374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4383688259143526015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50c25d3bb8f3e70499266efe651eb7ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

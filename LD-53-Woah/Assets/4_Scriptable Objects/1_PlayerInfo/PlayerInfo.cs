@@ -8,5 +8,17 @@ using UnityEngine.UI;
 public class PlayerInfo : ScriptableObject
 {
     [Range(0,1)]
+    public float musicVolume;
+    [Range(0,1)]
+    public float sfxVolume;
     public float masterVolume;
+
+    [Header("levels unlocked")]
+    public int levelsUnlocked;
+
+    public void AddLevelUnlocked()
+    {
+        levelsUnlocked++;
+    }
+
 }
