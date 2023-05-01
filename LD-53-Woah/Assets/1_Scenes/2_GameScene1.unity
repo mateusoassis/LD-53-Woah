@@ -1747,11 +1747,6 @@ Transform:
   m_Father: {fileID: 572975609}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &947123955 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8149460358112649310, guid: 38a2d862be7ca4f45a86f29f87c0c9db, type: 3}
-  m_PrefabInstance: {fileID: 8149460358241539757}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &976770104
 GameObject:
   m_ObjectHideFlags: 0
@@ -3669,7 +3664,7 @@ MonoBehaviour:
   skillHandler: {fileID: 1726809324}
   robotHandler: {fileID: 439260951}
   enemyCounter: 21
-  nextMap: {fileID: 947123955}
+  nextMap: {fileID: 8149460358241539758}
 --- !u!50 &2033443030
 Rigidbody2D:
   serializedVersion: 4
@@ -4179,3 +4174,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a2d862be7ca4f45a86f29f87c0c9db, type: 3}
+--- !u!1 &8149460358241539758 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8149460358303520924, guid: 38a2d862be7ca4f45a86f29f87c0c9db, type: 3}
+  m_PrefabInstance: {fileID: 8149460358241539757}
+  m_PrefabAsset: {fileID: 0}
