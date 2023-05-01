@@ -6137,6 +6137,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedSkill: 0
   pauseHandler: {fileID: 0}
+  mouseCanShoot: 0
+  sound: {fileID: 0}
   skillUI:
   - image: {fileID: 924747430}
     skill: {fileID: 11400000, guid: 58de3bb4cfbf8ce4a8de7ef6b22c55f1, type: 2}
@@ -7152,6 +7154,9 @@ MonoBehaviour:
   greenBar: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   dimBar: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   skillHandler: {fileID: 1726809324}
+  robotHandler: {fileID: 0}
+  enemyCounter: 21
+  nextMap: {fileID: 947123955}
 --- !u!50 &2033443030
 Rigidbody2D:
   serializedVersion: 4
