@@ -17,6 +17,7 @@ public class EnemyBehaviour : MonoBehaviour
     public Transform destinationPoint;
     public Transform finalDestinationPoint;
     public GameObject destroyParticle;
+    public PlayerStatus playerStatus;
 
     public int locationsInTotal;
 
@@ -42,6 +43,7 @@ public class EnemyBehaviour : MonoBehaviour
         locationsInTotal = locations.Length;
         destinationPoint = locations[0];
         finalDestinationPoint = GameObject.Find("DestinationPoint").GetComponent<Transform>();
+        playerStatus = GameObject.Find("DestinationPoint").GetComponent<PlayerStatus>();
         playerStatusScript = destinationPoint.transform.GetComponent<PlayerStatus>();
         enemyCurrentHealth = enemyMaxHealth;
         enemyRealSpeed = enemySpeed;
@@ -146,5 +148,6 @@ public class EnemyBehaviour : MonoBehaviour
     private void OnDestroy()
     {
         GameObject explosion = Instantiate(destroyParticle, transform.position, transform.rotation);
+        playerStatus.enemyCounter--;
     }
 }

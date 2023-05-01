@@ -3451,7 +3451,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &947123956
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7355,6 +7355,8 @@ MonoBehaviour:
   dimBar: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   skillHandler: {fileID: 1726809324}
   robotHandler: {fileID: 439260951}
+  enemyCounter: 21
+  nextMap: {fileID: 947123955}
 --- !u!50 &2033443030
 Rigidbody2D:
   serializedVersion: 4
@@ -7475,7 +7477,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1

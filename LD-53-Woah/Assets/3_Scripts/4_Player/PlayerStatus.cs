@@ -18,14 +18,27 @@ public class PlayerStatus : MonoBehaviour
     [SerializeField] private SkillHandler skillHandler;
     [SerializeField] private RobotHandler robotHandler;
 
+    [SerializeField] public int enemyCounter;
+
+    public GameObject nextMap;
+
     void Awake()
     {
         currentHealth = totalHealth;
+        //nextMap = GameObject.Find("NextMap");
     }
 
     void Start()
     {
         UpdateHealth();
+    }
+
+    private void Update()
+    {
+        if(enemyCounter <= 0)
+        {
+            nextMap.SetActive(true);
+        }
     }
 
     public void UpdateHealth()
