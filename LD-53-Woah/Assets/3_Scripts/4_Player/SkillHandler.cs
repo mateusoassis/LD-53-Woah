@@ -7,6 +7,7 @@ public class SkillHandler : MonoBehaviour
 {
     [SerializeField] private int selectedSkill;
     [SerializeField] private PauseHandler pauseHandler;
+    public bool mouseCanShoot;
 
     [System.Serializable]
     public class SkillUI
@@ -23,6 +24,11 @@ public class SkillHandler : MonoBehaviour
             skillUI[i].skill.Starting();
         }
         pauseHandler = GameObject.Find("GameHandler").GetComponent<PauseHandler>();
+    }
+
+    void Start()
+    {
+        mouseCanShoot = true;
     }
 
     void Update()
@@ -75,9 +81,12 @@ public class SkillHandler : MonoBehaviour
 
             if(Input.GetKeyDown(KeyCode.Mouse0))
             {
-                Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                mousePos.z = 0;
-                skillUI[selectedSkill].skill.CastSkill(mousePos);
+                if(mouseCanShoot)
+                {
+                    Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    mousePos.z = 0;
+                    skillUI[selectedSkill].skill.CastSkill(mousePos);
+                }
             }
         }
     }
