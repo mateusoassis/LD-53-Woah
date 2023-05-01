@@ -16,7 +16,7 @@ public class Destruir : MonoBehaviour
         transform.localScale = new Vector3(skill.skillArray.skillRadius, skill.skillArray.skillRadius, 1f);
         playerStatus = GameObject.Find("DestinationPoint").GetComponent<PlayerStatus>();
         Destroy(parent, skill.skillArray.skillCooldown);
-        GameObject.Find("SoundManager").GetComponent<AudioClipManager>().PlayOneShot("DealDamage");
+        GameObject.Find("SoundManager").GetComponent<AudioClipManager>().PlayOneShot("LaserSound");
     }
 
     void Start()

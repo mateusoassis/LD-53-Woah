@@ -106,3 +106,9 @@ MonoBehaviour:
     volume: 0.3
     pitch: 1
     loop: 1
+  - name: LaserSound
+    clip: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
