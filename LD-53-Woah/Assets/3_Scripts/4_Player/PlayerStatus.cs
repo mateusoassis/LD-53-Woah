@@ -15,8 +15,13 @@ public class PlayerStatus : MonoBehaviour
     public Sprite greenBar;
     public Sprite dimBar;
 
+<<<<<<< HEAD
     public SkillHandler skillHandler;
     public RobotHandler robotHandler;
+=======
+    [SerializeField] private SkillHandler skillHandler;
+    [SerializeField] public RobotHandler robotHandler;
+>>>>>>> origin/main
 
     [SerializeField] public int enemyCounter;
 
