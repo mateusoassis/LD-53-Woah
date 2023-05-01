@@ -16,6 +16,7 @@ public class PlayerStatus : MonoBehaviour
     public Sprite dimBar;
 
     [SerializeField] private SkillHandler skillHandler;
+    [SerializeField] private RobotHandler robotHandler;
 
     void Awake()
     {
@@ -49,6 +50,9 @@ public class PlayerStatus : MonoBehaviour
         cameraShake.CallShake(cameraShake.shakeDuration, cameraShake.shakeMagnitude);
         UpdateHealth();
         GameObject.Find("GameHandler").GetComponent<LoseHandler>().DidPlayerLost();
+        robotHandler.takenDamage = true;
+        robotHandler.TakenDamageSprite();
+        robotHandler.ResetIdleTimer();
     }
 
     public void Heal(int b)

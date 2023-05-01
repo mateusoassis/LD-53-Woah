@@ -76,7 +76,7 @@ public class EnemyBehaviour : MonoBehaviour
         }
         else
         {
-            Debug.Log(destinationIndex);
+            //Debug.Log(destinationIndex);
             transform.position = Vector2.MoveTowards(transform.position, destinationPoint.position, enemyRealSpeed * factor * Time.deltaTime);
         }
     }
