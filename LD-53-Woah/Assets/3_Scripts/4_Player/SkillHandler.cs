@@ -29,6 +29,23 @@ public class SkillHandler : MonoBehaviour
     {
         UpdateFillAmounts();
         Inputs(); 
+        UpdateSkillCooldowns();
+    }
+
+    public void UpdateSkillCooldowns()
+    {
+        for(int i = 0; i < skillUI.Length; i++)
+        {
+            if(skillUI[i].skill.skillArray.skillCooldownTimer <= skillUI[i].skill.skillArray.skillCooldown)
+            {
+                skillUI[i].skill.skillArray.skillCooldownTimer += Time.deltaTime;
+                // RefreshCooldown no controle da interface
+            }
+            else if(skillUI[i].skill.skillArray.skillCooldownTimer > skillUI[i].skill.skillArray.skillCooldown)
+            {
+                skillUI[i].skill.skillArray.canCast = true;
+            }
+        }
     }
 
     public void UpdateFillAmounts()

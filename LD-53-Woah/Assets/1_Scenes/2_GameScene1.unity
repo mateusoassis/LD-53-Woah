@@ -1883,6 +1883,9 @@ MonoBehaviour:
   takenDamage: 0
   takenDamageDelay: 2
   takenDamageDelayTimer: 0
+  happy: 0
+  happyDelay: 2
+  happyDelayTimer: 0
   redBlueSprites:
   - {fileID: 21300000, guid: 59e1b21dccb5fb44c93336de7ca35694, type: 3}
   - {fileID: 21300000, guid: acfd032cd944ef644a155027743f4735, type: 3}

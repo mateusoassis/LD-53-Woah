@@ -62,6 +62,7 @@ public class PlayerStatus : MonoBehaviour
 
     public void DestroyResetCooldown()
     {
+        // skill index 0
         skillHandler.skillUI[0].skill.skillArray.skillCooldownTimer = skillHandler.skillUI[0].skill.skillArray.skillCooldown;
         skillHandler.skillUI[0].skill.skillArray.canCast = true;
     }
@@ -90,6 +91,7 @@ public class PlayerStatus : MonoBehaviour
         {
             Debug.Log("Freeze CD Reset");
             FreezeResetCooldown();
+            robotHandler.HappyRobotAnim();
             Destroy(other.gameObject);
         }
         else if(other.gameObject.CompareTag("GorduraPlus"))

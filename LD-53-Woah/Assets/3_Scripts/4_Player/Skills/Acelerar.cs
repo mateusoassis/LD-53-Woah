@@ -13,12 +13,15 @@ public class Acelerar : MonoBehaviour
 
     void Update()
     {
+        /*
         if(skill.skillArray.skillCooldownTimer <= skill.skillArray.skillCooldown)
         {
             skill.skillArray.skillCooldownTimer += Time.deltaTime;
             // RefreshCooldown no controle da interface
         }
-        else if(skill.skillArray.skillCooldownTimer > skill.skillArray.skillCooldown)
+        else 
+        */
+        if(skill.skillArray.skillCooldownTimer > skill.skillArray.skillCooldown)
         {
             skill.skillArray.canCast = true;
             Destroy(this.gameObject);

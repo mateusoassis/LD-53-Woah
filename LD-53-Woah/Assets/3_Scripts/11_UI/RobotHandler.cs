@@ -8,12 +8,20 @@ public class RobotHandler : MonoBehaviour
     public Animator robotAnim;
     [SerializeField] private Image robotColor;
     [SerializeField] private Image eyesHolder;
+
+    [Header("Idle Anim")]
     [SerializeField] private float idleAnimDelay;
     [SerializeField] private float idleAnimDelayTimer;
 
+    [Header("Taken Damage Anim")]
     public bool takenDamage;
     [SerializeField] private float takenDamageDelay;
     [SerializeField] private float takenDamageDelayTimer;
+
+    [Header("Happy Anim")]
+    public bool happy;
+    [SerializeField] private float happyDelay;
+    [SerializeField] private float happyDelayTimer;
 
     // 0 = blue
     // 1 = red
@@ -47,6 +55,18 @@ public class RobotHandler : MonoBehaviour
                 ResetColorTimer();
             }
         }
+
+        if(happy)
+        {
+            if(happyDelayTimer <= happyDelay)
+            {
+                happyDelayTimer += Time.deltaTime;
+            }
+            else
+            {
+                ResetHappyTimer();
+            }
+        }
     }
     
     public void ResetColorTimer()
@@ -55,11 +75,19 @@ public class RobotHandler : MonoBehaviour
         takenDamage = false;
         takenDamageDelayTimer = 0f;
         TriggerIdleAnim();
+        ResetIdleTimer();
     }
 
     public void ResetIdleTimer()
     {
         idleAnimDelayTimer = 0f;
+    }
+    public void ResetHappyTimer()
+    {
+        happy = false;
+        happyDelayTimer = 0f;
+        TriggerIdleAnim();
+        ResetIdleTimer();
     }
 
     public void TriggerIdleAnim()
@@ -74,9 +102,18 @@ public class RobotHandler : MonoBehaviour
         takenDamageDelayTimer = 0f;
         robotAnim.SetTrigger("TakenDamageAnim");
         ResetIdleTimer();
+        happyDelayTimer = happyDelay;
     }
     public void RegularSprite()
     {
         robotColor.sprite = redBlueSprites[0];
+    }
+
+    public void HappyRobotAnim()
+    {
+        happy = true;
+        robotAnim.SetTrigger("HappyAnim");
+        //ResetHappyTimer();
+        takenDamageDelayTimer = takenDamageDelay;
     }
 }
