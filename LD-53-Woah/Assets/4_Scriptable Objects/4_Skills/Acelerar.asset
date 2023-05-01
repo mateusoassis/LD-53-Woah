@@ -16,9 +16,9 @@ MonoBehaviour:
     skillDamage: 0
     skillRadius: 5
     skillCooldown: 4
-    canCast: 0
+    canCast: 1
     skillIndex: 2
     skillName: Acelerar
     skillSound: {fileID: 0}
-    skillPrefab: {fileID: 112463688856522940, guid: 36afc013a97491f48883c0f357f97c35, type: 3}
-    skillCooldownTimer: 3.2556448
+    skillPrefab: {fileID: 127133187109753521, guid: e107edbde3847a24c83c1d685d602d31, type: 3}
+    skillCooldownTimer: 4.02
