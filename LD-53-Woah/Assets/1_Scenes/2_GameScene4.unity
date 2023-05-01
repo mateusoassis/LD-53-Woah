@@ -4759,9 +4759,9 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 1
     m_ControlPoints:
-    - position: {x: -1.0566094, y: 0.8054449, z: 0}
-      leftTangent: {x: -1.3512785, y: -0.0032663345, z: 0}
-      rightTangent: {x: 3.533023, y: 0.008537769, z: 0}
+    - position: {x: -2.5005958, y: -19.056435, z: 0}
+      leftTangent: {x: -1.3512788, y: -0.0032672882, z: 0}
+      rightTangent: {x: 3.5330229, y: 0.0085392, z: 0}
       mode: 1
       height: 1
       bevelCutoff: 0
@@ -4769,9 +4769,9 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 17.5667, y: 0.86217576, z: 0}
-      leftTangent: {x: -0.63517, y: -0.0019145012, z: 0}
-      rightTangent: {x: 0.6199856, y: 0.0018692017, z: 0}
+    - position: {x: 16.107357, y: -19.031395, z: 0}
+      leftTangent: {x: -0.63516045, y: -0.0019168854, z: 0}
+      rightTangent: {x: 0.61997414, y: 0.0018692017, z: 0}
       mode: 1
       height: 1
       bevelCutoff: 0
@@ -4779,8 +4779,8 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 29.408455, y: -5.7916417, z: 0}
-      leftTangent: {x: -0.57556725, y: -0.009794712, z: 0}
+    - position: {x: 29.449879, y: -5.7364116, z: 0}
+      leftTangent: {x: -0.57557297, y: -0.009794712, z: 0}
       rightTangent: {x: 0.5410614, y: 0.0092077255, z: 0}
       mode: 1
       height: 1
@@ -4871,8 +4871,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 23.06793, y: -2.4643335, z: 0}
-    m_Extent: {x: 24.132986, y: 6.8205414, z: 0}
+    m_Center: {x: 22.345936, y: -12.395912, z: 0}
+    m_Extent: {x: 24.854979, y: 10.155512, z: 0}
 --- !u!4 &1273104064
 Transform:
   m_ObjectHideFlags: 0
@@ -4881,7 +4881,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273104061}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.24, y: 1.77, z: 0}
+  m_LocalPosition: {x: -4.81, y: 5.72, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8066,9 +8066,9 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 1
     m_ControlPoints:
-    - position: {x: -2.6526592, y: -5.6606, z: 0}
-      leftTangent: {x: -1.3512785, y: -0.0032663345, z: 0}
-      rightTangent: {x: 3.5330229, y: 0.008537769, z: 0}
+    - position: {x: -2.4565313, y: 0.9424083, z: 0}
+      leftTangent: {x: -1.3512788, y: -0.0032663345, z: 0}
+      rightTangent: {x: 3.5330229, y: 0.008538127, z: 0}
       mode: 1
       height: 1
       bevelCutoff: 0
@@ -8076,8 +8076,8 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 16.15968, y: -5.6924787, z: 0}
-      leftTangent: {x: -0.6351671, y: -0.0019145012, z: 0}
+    - position: {x: 16.192368, y: 1.0085942, z: 0}
+      leftTangent: {x: -0.6351614, y: -0.0019146204, z: 0}
       rightTangent: {x: 0.6199856, y: 0.0018692017, z: 0}
       mode: 1
       height: 1
@@ -8086,8 +8086,8 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 29.457378, y: 0.91066927, z: 0}
-      leftTangent: {x: -0.57556915, y: -0.009794831, z: 0}
+    - position: {x: 29.366188, y: -12.4236965, z: 0}
+      leftTangent: {x: -0.57556915, y: -0.009795189, z: 0}
       rightTangent: {x: 0.5410576, y: 0.0092077255, z: 0}
       mode: 1
       height: 1
@@ -8096,9 +8096,9 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 2
-    - position: {x: 45.718376, y: 0.9472959, z: 0}
-      leftTangent: {x: -6.6157494, y: -0.028162062, z: 0}
-      rightTangent: {x: 4.63982, y: 0.019751549, z: 0}
+    - position: {x: 47.391026, y: -12.378714, z: 0}
+      leftTangent: {x: -6.6157494, y: -0.028160095, z: 0}
+      rightTangent: {x: 4.6398163, y: 0.019753456, z: 0}
       mode: 1
       height: 1
       bevelCutoff: 0
@@ -8178,8 +8178,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 21.536072, y: -2.3725166, z: 0}
-    m_Extent: {x: 24.197178, y: 6.814781, z: 0}
+    m_Center: {x: 22.470463, y: -5.707157, z: 0}
+    m_Extent: {x: 24.93544, y: 10.209658, z: 0}
 --- !u!4 &2042023867
 Transform:
   m_ObjectHideFlags: 0
