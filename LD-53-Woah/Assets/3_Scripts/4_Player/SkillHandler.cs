@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SkillHandler : MonoBehaviour
 {
     public int selectedSkill;
-    [SerializeField] private PauseHandler pauseHandler;
+    public PauseHandler pauseHandler;
     public bool mouseCanShoot;
     public AudioClipManager sound;
 

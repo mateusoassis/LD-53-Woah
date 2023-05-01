@@ -68,6 +68,7 @@ public class Destruir : MonoBehaviour
             playerStatus.DestroyResetCooldown();
             Destroy(other.gameObject);
             GetComponent<CircleCollider2D>().enabled = false;
+            GameObject.Find("SoundManager").GetComponent<AudioClipManager>().PlayOneShot("DealDamage");
         }
     }
 }

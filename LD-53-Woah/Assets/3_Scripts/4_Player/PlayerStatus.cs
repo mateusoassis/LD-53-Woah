@@ -37,8 +37,17 @@ public class PlayerStatus : MonoBehaviour
     {
         if(enemyCounter <= 0)
         {
-            nextMap.SetActive(true);
+            //nextMap.SetActive(true);
+            GoToNextMap();
         }
+    }
+
+    public void GoToNextMap()
+    {
+        Time.timeScale = 0;
+        skillHandler.pauseHandler.paused = true;
+        skillHandler.pauseHandler.playerLost = true;  
+        nextMap.SetActive(true); 
     }
 
     public void UpdateHealth()
