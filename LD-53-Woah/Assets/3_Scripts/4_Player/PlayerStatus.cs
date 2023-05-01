@@ -28,10 +28,13 @@ public class PlayerStatus : MonoBehaviour
         //nextMap = GameObject.Find("NextMap");
         skillHandler = GameObject.Find("PlayerHandler").GetComponent<SkillHandler>();
         robotHandler = GameObject.Find("RobotImage").GetComponent<RobotHandler>();
+        cameraShake = GameObject.Find("Main Camera").GetComponent<Shake>();
+        nextMap = GameObject.Find("WinMenu");
     }
 
     void Start()
     {
+        nextMap.SetActive(false);
         UpdateHealth();
     }
 

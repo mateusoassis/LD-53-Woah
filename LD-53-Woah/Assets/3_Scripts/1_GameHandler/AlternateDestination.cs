@@ -12,23 +12,24 @@ public class AlternateDestination : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("Alternate");
         if (other.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Destroy CD Reset");
+            Debug.Log("Destroy CD Reset Alternate");
             playerStatus.TakeDamage(other.gameObject.transform.GetComponent<EnemyBehaviour>().damage);
             playerStatus.DestroyResetCooldown();
             Destroy(other.gameObject);
         }
         else if (other.gameObject.CompareTag("Vitamin"))
         {
-            Debug.Log("Freeze CD Reset");
+            Debug.Log("Freeze CD Reset Alternate");
             playerStatus.FreezeResetCooldown();
             playerStatus.robotHandler.HappyRobotAnim();
             Destroy(other.gameObject);
         }
         else if (other.gameObject.CompareTag("GorduraPlus"))
         {
-            Debug.Log("Haste CD Reset");
+            Debug.Log("Haste CD Reset Alternate");
             playerStatus.HasteResetCooldown();
             Destroy(other.gameObject);
         }
