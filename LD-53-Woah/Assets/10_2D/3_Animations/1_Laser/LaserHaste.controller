@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b4fa89ca7f1db6b46926d40b23407e52, type: 2}
+  m_Motion: {fileID: 7400000, guid: cf1a1112dc43c2d4c91275594c5261a7, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -32,7 +32,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Laser
+  m_Name: LaserHaste
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
