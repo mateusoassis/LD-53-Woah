@@ -53,7 +53,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         SwitchDestination();
         HandleFactor();
-        HandleStatus();
+        //HandleStatus();
     }
 
     public void EnemyTakeDamage(int damageTaken)
@@ -111,6 +111,7 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
     
+    /*
     public void HandleStatus()
     {
         if(freeze)
@@ -132,6 +133,7 @@ public class EnemyBehaviour : MonoBehaviour
             }
         }
     }
+    */
 
     public void OnTriggerEnter2D(Collider2D other) 
     {
@@ -142,6 +144,18 @@ public class EnemyBehaviour : MonoBehaviour
         else if(other.gameObject.tag == "Haste")
         {
             haste = true;
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.gameObject.tag == "Freeze")
+        {
+            freeze = false;
+        }
+        else if(other.gameObject.tag == "Haste")
+        {
+            haste = false;
         }
     }
 
