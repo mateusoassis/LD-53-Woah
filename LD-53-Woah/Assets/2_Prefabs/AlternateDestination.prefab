@@ -11,7 +11,11 @@ GameObject:
   - component: {fileID: 7757462366436270653}
   - component: {fileID: 7757462366436271043}
   - component: {fileID: 7757462366436270652}
+<<<<<<< HEAD
   - component: {fileID: 4363534975414782341}
+=======
+  - component: {fileID: 5955599516334564442}
+>>>>>>> origin/main
   m_Layer: 0
   m_Name: AlternateDestination
   m_TagString: Untagged
@@ -63,7 +67,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStatus: {fileID: 0}
+<<<<<<< HEAD
 --- !u!50 &4363534975414782341
+=======
+--- !u!50 &5955599516334564442
+>>>>>>> origin/main
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
