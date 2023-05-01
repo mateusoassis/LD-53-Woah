@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4383688259143525985}
   - component: {fileID: 4383688259143526014}
   - component: {fileID: 4751854364856572234}
-  - component: {fileID: 2638080177104535374}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Sound
@@ -65,63 +64,69 @@ MonoBehaviour:
     volume: 0.8
     pitch: 1
     loop: 0
+    sfx: 0
+    music: 0
   - name: MainMenu
     clip: {fileID: 8300000, guid: 8868429b771b46f4382a533b58a11782, type: 3}
     source: {fileID: 0}
     volume: 0.3
     pitch: 1
     loop: 1
+    sfx: 0
+    music: 0
   - name: SkillSwitch
     clip: {fileID: 8300000, guid: d4ea85148485f9040971edfa640a454a, type: 3}
     source: {fileID: 0}
     volume: 0.8
     pitch: 1
     loop: 0
+    sfx: 0
+    music: 0
   - name: TakeDamage
     clip: {fileID: 8300000, guid: 3fa1750fb364eed429c906385870776f, type: 3}
     source: {fileID: 0}
     volume: 0.8
     pitch: 1
     loop: 0
+    sfx: 0
+    music: 0
   - name: ResetSkill
     clip: {fileID: 8300000, guid: 0db03a6285c546b42bc1054d2419ac14, type: 3}
     source: {fileID: 0}
     volume: 0.8
     pitch: 1
     loop: 0
+    sfx: 0
+    music: 0
   - name: TransformFat
     clip: {fileID: 8300000, guid: d74dacb55d4553d468e8d675498bb946, type: 3}
     source: {fileID: 0}
     volume: 0.8
     pitch: 1
     loop: 0
+    sfx: 0
+    music: 0
   - name: BlueSong
     clip: {fileID: 8300000, guid: 1b7bcc7cccb6e3e41b5b43ec842f6e22, type: 3}
     source: {fileID: 0}
     volume: 0.3
     pitch: 1
     loop: 1
+    sfx: 0
+    music: 0
   - name: MinorHarmonicSong
     clip: {fileID: 8300000, guid: 4d1b005e70be705448225d50be412f6b, type: 3}
     source: {fileID: 0}
     volume: 0.3
     pitch: 1
     loop: 1
+    sfx: 0
+    music: 0
   - name: LaserSound
     clip: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
     source: {fileID: 0}
     volume: 0.8
     pitch: 1
     loop: 0
---- !u!114 &2638080177104535374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4383688259143526015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50c25d3bb8f3e70499266efe651eb7ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+    sfx: 0
+    music: 0

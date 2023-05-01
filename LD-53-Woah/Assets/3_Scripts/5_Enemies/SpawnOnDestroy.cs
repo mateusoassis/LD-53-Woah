@@ -8,6 +8,7 @@ public class SpawnOnDestroy : MonoBehaviour
 
     void OnDestroy()
     {
+        
         GameObject fatPlus = Instantiate(fatPlusPrefab, this.transform.position, Quaternion.identity);
         GetComponent<EnemyBehaviour>().playerStatus.enemyCounter++;
         GameObject.Find("SoundManager").GetComponent<AudioClipManager>().PlayOneShot("TransformFat");
