@@ -2693,15 +2693,33 @@ MonoBehaviour:
   mouseCanShoot: 0
   sound: {fileID: 0}
   skillUI:
-  - image: {fileID: 8149460357954654219}
+  - imageFillCooldown: {fileID: 8149460357954654219}
     skill: {fileID: 11400000, guid: 58de3bb4cfbf8ce4a8de7ef6b22c55f1, type: 2}
     mouse: {fileID: 8149460358089384630}
-  - image: {fileID: 8149460358403123544}
+    blinkIcon: {fileID: 8149460357766425912}
+    baseColor: {r: 1, g: 1, b: 1, a: 1}
+    blinkColor: {r: 0.97885394, g: 1, b: 0, a: 1}
+    blinkInterval: 0.6
+    blinkIntervalTimer: 0
+    blinkColorSwap: 0
+  - imageFillCooldown: {fileID: 8149460358403123544}
     skill: {fileID: 11400000, guid: d731369379e9ad349b4f5314f5ef8dff, type: 2}
     mouse: {fileID: 8149460358880684508}
-  - image: {fileID: 8149460359515519876}
+    blinkIcon: {fileID: 8149460359617271194}
+    baseColor: {r: 1, g: 1, b: 1, a: 1}
+    blinkColor: {r: 0.98039216, g: 1, b: 0, a: 1}
+    blinkInterval: 0.6
+    blinkIntervalTimer: 0
+    blinkColorSwap: 0
+  - imageFillCooldown: {fileID: 8149460359515519876}
     skill: {fileID: 11400000, guid: dc53e9c096ccd2143bcdf675caefa580, type: 2}
     mouse: {fileID: 8149460359564935230}
+    blinkIcon: {fileID: 8149460359550919661}
+    baseColor: {r: 1, g: 1, b: 1, a: 1}
+    blinkColor: {r: 0.98039216, g: 1, b: 0, a: 1}
+    blinkInterval: 0.6
+    blinkIntervalTimer: 0
+    blinkColorSwap: 0
 --- !u!1 &8149460358855635074
 GameObject:
   m_ObjectHideFlags: 0

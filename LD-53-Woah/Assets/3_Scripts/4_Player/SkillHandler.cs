@@ -13,9 +13,17 @@ public class SkillHandler : MonoBehaviour
     [System.Serializable]
     public class SkillUI
     {
-        public Image image;
+        public Image imageFillCooldown;
         public PlayerSkills skill;
         public GameObject mouse;
+
+        [Header("Blink select skill")]
+        public Image blinkIcon;
+        public Color baseColor;
+        public Color blinkColor;
+        public float blinkInterval;
+        public float blinkIntervalTimer;
+        public bool blinkColorSwap;
     }
     public SkillUI[] skillUI;
 
@@ -41,6 +49,7 @@ public class SkillHandler : MonoBehaviour
         UpdateFillAmounts();
         Inputs(); 
         UpdateSkillCooldowns();
+        UpdateSelectedSkillIconColor();
     }
 
     public void UpdateSkillCooldowns()
@@ -59,11 +68,66 @@ public class SkillHandler : MonoBehaviour
         }
     }
 
+    public void UpdateSelectedSkillIconColor()
+    {
+        for(int i = 0; i < skillUI.Length; i++)
+        {
+            if(i == selectedSkill)
+            {
+                if(!skillUI[i].blinkColorSwap)
+                {
+                    if(skillUI[i].blinkIntervalTimer <= skillUI[i].blinkInterval)
+                    {
+                        skillUI[i].blinkIntervalTimer += Time.deltaTime;
+                    }
+                    else
+                    {
+                        skillUI[i].blinkColorSwap = true;
+                        skillUI[i].blinkIntervalTimer = 0f;
+                    }
+
+                    float perc = skillUI[i].blinkIntervalTimer / skillUI[i].blinkInterval;
+                    //perc = 1f - Mathf.Cos(perc * Mathf.PI * 0.5f);
+                    skillUI[i].blinkIcon.color = Color.Lerp(skillUI[i].blinkIcon.color, skillUI[i].blinkColor, perc = 1f - Mathf.Cos(perc * Mathf.PI * 0.5f));
+                }
+                else if(skillUI[i].blinkColorSwap)
+                {
+                    if(skillUI[i].blinkIntervalTimer <= skillUI[i].blinkInterval)
+                    {
+                        skillUI[i].blinkIntervalTimer += Time.deltaTime;
+                    }
+                    else
+                    {
+                        skillUI[i].blinkColorSwap = false;
+                        skillUI[i].blinkIntervalTimer = 0f;
+                    }
+
+                    float perc = skillUI[i].blinkIntervalTimer / skillUI[i].blinkInterval;
+                    //perc = 1f - Mathf.Cos(perc * Mathf.PI * 0.5f);
+                    skillUI[i].blinkIcon.color = Color.Lerp(skillUI[i].blinkIcon.color, skillUI[i].baseColor, perc = 1f - Mathf.Cos(perc * Mathf.PI * 0.5f));
+                }
+            }
+        }
+    }
+
+    public void DisableAllOtherColors()
+    {
+        for(int i = 0; i < skillUI.Length; i++)
+        {
+            if(i != selectedSkill)
+            {
+                skillUI[i].blinkColorSwap = false;
+                skillUI[i].blinkIntervalTimer = 0f;
+                skillUI[i].blinkIcon.color = skillUI[i].baseColor;
+            }
+        }
+    }
+
     public void UpdateFillAmounts()
     {
         for(int i = 0; i < skillUI.Length; i++)
         {
-            skillUI[i].image.fillAmount = (skillUI[i].skill.skillArray.skillCooldown - skillUI[i].skill.skillArray.skillCooldownTimer) / skillUI[i].skill.skillArray.skillCooldown;
+            skillUI[i].imageFillCooldown.fillAmount = (skillUI[i].skill.skillArray.skillCooldown - skillUI[i].skill.skillArray.skillCooldownTimer) / skillUI[i].skill.skillArray.skillCooldown;
         }
     }
 
@@ -78,6 +142,7 @@ public class SkillHandler : MonoBehaviour
                     sound.PlayOneShot("SkillSwitch");
                     selectedSkill = 0;
                     SwapSkills(selectedSkill);
+                    DisableAllOtherColors();
                 }  
             }
             else if(Input.GetKeyDown(KeyCode.Alpha2))
@@ -87,6 +152,7 @@ public class SkillHandler : MonoBehaviour
                     sound.PlayOneShot("SkillSwitch");
                     selectedSkill = 1;
                     SwapSkills(selectedSkill);
+                    DisableAllOtherColors();
                 }     
             }
             else if(Input.GetKeyDown(KeyCode.Alpha3))
@@ -96,6 +162,7 @@ public class SkillHandler : MonoBehaviour
                     sound.PlayOneShot("SkillSwitch");
                     selectedSkill = 2;
                     SwapSkills(selectedSkill);
+                    DisableAllOtherColors();
                 }                
             }
 
