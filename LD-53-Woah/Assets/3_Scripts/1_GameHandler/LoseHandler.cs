@@ -23,6 +23,7 @@ public class LoseHandler : MonoBehaviour
             pauseHandler.playerLost = true;  
             loseObject.SetActive(true);
             playerStatus.cameraShake.StopShake();  
+            pauseHandler.skill.ShowMouseCursor();
         }
     }
 }
