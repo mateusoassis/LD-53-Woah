@@ -61,7 +61,7 @@ MonoBehaviour:
   - name: DealDamage
     clip: {fileID: 8300000, guid: 7851b77e498f980459869d26e60b295b, type: 3}
     source: {fileID: 0}
-    volume: 1
+    volume: 0.8
     pitch: 1
     loop: 0
   - name: MainMenu
@@ -73,25 +73,25 @@ MonoBehaviour:
   - name: SkillSwitch
     clip: {fileID: 8300000, guid: d4ea85148485f9040971edfa640a454a, type: 3}
     source: {fileID: 0}
-    volume: 1
+    volume: 0.8
     pitch: 1
     loop: 0
   - name: TakeDamage
     clip: {fileID: 8300000, guid: 3fa1750fb364eed429c906385870776f, type: 3}
     source: {fileID: 0}
-    volume: 1
+    volume: 0.8
     pitch: 1
     loop: 0
   - name: ResetSkill
     clip: {fileID: 8300000, guid: 0db03a6285c546b42bc1054d2419ac14, type: 3}
     source: {fileID: 0}
-    volume: 1
+    volume: 0.8
     pitch: 1
     loop: 0
   - name: TransformFat
     clip: {fileID: 8300000, guid: d74dacb55d4553d468e8d675498bb946, type: 3}
     source: {fileID: 0}
-    volume: 1
+    volume: 0.8
     pitch: 1
     loop: 0
   - name: BlueSong
@@ -109,6 +109,6 @@ MonoBehaviour:
   - name: LaserSound
     clip: {fileID: 8300000, guid: 4310474905e266640852f43bd609a1a4, type: 3}
     source: {fileID: 0}
-    volume: 1
+    volume: 0.8
     pitch: 1
     loop: 0
