@@ -10,5 +10,6 @@ public class SpawnOnDestroy : MonoBehaviour
     {
         GameObject fatPlus = Instantiate(fatPlusPrefab, this.transform.position, Quaternion.identity);
         GetComponent<EnemyBehaviour>().playerStatus.enemyCounter++;
+        
     }
 }
