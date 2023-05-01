@@ -47,7 +47,8 @@ public class PlayerStatus : MonoBehaviour
         Time.timeScale = 0;
         skillHandler.pauseHandler.paused = true;
         skillHandler.pauseHandler.playerLost = true;  
-        nextMap.SetActive(true); 
+        nextMap.SetActive(true);
+        skillHandler.pauseHandler.skill.ShowMouseCursor(); 
     }
 
     public void UpdateHealth()
