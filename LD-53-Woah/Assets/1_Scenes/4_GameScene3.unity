@@ -7182,7 +7182,7 @@ MonoBehaviour:
   dimBar: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   skillHandler: {fileID: 1726809324}
   robotHandler: {fileID: 439260951}
-  enemyCounter: 42
+  enemyCounter: 52
   nextMap: {fileID: 8149460358241539758}
 --- !u!50 &2033443030
 Rigidbody2D:
