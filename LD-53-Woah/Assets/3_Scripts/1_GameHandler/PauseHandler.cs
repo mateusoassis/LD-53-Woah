@@ -12,6 +12,12 @@ public class PauseHandler : MonoBehaviour
     [Header("References")]
     [SerializeField] private GameObject pauseObject;
     public SkillHandler skill;
+
+    void Start()
+    {
+        ResumeGame();
+    }
+
     void Update()
     {
         if(!dialogue)
