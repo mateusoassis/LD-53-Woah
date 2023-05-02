@@ -99,12 +99,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73545d96ec0c58c40b53ca5b1c0de924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 1
+  enemySpeed: 2
   enemyMaxHealth: 2
   enemyCurrentHealth: 0
   damage: 1
   enemyRealSpeed: 0
-  playerStatusScript: {fileID: 0}
   destinationPoint: {fileID: 0}
   finalDestinationPoint: {fileID: 0}
   destroyParticle: {fileID: 8410259582032336534, guid: 8295b1cccd76aed43a043438a03f98d9, type: 3}
