@@ -117,7 +117,7 @@ public class PlayerStatus : MonoBehaviour
         {
             Debug.Log("Destroy CD Reset");
             TakeDamage(other.gameObject.transform.GetComponent<EnemyBehaviour>().damage);
-            DestroyResetCooldown();
+            //DestroyResetCooldown();
             Destroy(other.gameObject);
         }else if (other.gameObject.CompareTag("Vitamin"))
         {
@@ -130,6 +130,13 @@ public class PlayerStatus : MonoBehaviour
         {
             Debug.Log("Haste CD Reset");
             HasteResetCooldown();
+            Destroy(other.gameObject);
+        }
+        else if(other.gameObject.CompareTag("Gordura"))
+        {
+            Debug.Log("Destroy CD Reset");
+            TakeDamage(other.gameObject.transform.GetComponent<EnemyBehaviour>().damage);
+            //DestroyResetCooldown();
             Destroy(other.gameObject);
         }
     }
