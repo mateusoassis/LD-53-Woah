@@ -48,3 +48,6 @@ MonoBehaviour:
   introName: 0_Intro
   menuName: 1_MenuScene
   gameTutorialStartName: 2_GameScene1
+  nextScene: 
+  playerInfo: {fileID: 0}
+  subtract: 2

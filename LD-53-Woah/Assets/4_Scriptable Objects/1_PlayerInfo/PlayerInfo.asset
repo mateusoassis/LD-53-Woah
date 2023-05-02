@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a08f123254911841bf3945940d8a6d1, type: 3}
   m_Name: PlayerInfo
   m_EditorClassIdentifier: 
-  masterVolume: 0.7408242
+  musicVolume: 0
+  sfxVolume: 0
+  seenTutorial: 1
+  levelsUnlocked: 3

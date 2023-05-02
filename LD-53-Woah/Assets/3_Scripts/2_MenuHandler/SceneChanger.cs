@@ -21,10 +21,14 @@ public class SceneChanger : MonoBehaviour
     void Awake()
     {
         currentIndex = SceneManager.GetActiveScene().buildIndex;
-        if(playerInfo.levelsUnlocked < currentIndex - subtract)
+        if(currentIndex > 1)
         {
-            playerInfo.levelsUnlocked = currentIndex - subtract;
+            if(playerInfo.levelsUnlocked < currentIndex - subtract)
+            {
+                playerInfo.levelsUnlocked = currentIndex - subtract;
+            }    
         }
+        
     }
 
     public void SwapToMenu()

@@ -14,6 +14,6 @@ public class StartGameScript : MonoBehaviour
     // Update is called once per frame
     public void StartGame()
     {
-        SceneManager.LoadScene("1_Scenes/2_GameScene 1");
+        SceneManager.LoadScene("2_GameScene1");
     }
 }

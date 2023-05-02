@@ -23,6 +23,7 @@ public class LevelSelectorHandler : MonoBehaviour
         else
         {
             SceneManager.LoadScene("TutorialScene");
+            playerInfo.seenTutorial = true;
         }
         
     }
