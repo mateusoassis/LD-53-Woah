@@ -522,7 +522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 0}
   menuSceneName: 1_MenuScene
-  hardGameSceneName: 
+  hardGameSceneName: 5_GameSceneFINAL
   menuMusic: 0
   gameMusic: 0
   hardGameMusic: 0
