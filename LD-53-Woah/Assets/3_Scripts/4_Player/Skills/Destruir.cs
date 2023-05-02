@@ -60,7 +60,8 @@ public class Destruir : MonoBehaviour
         else if(other.gameObject.CompareTag("Gordura"))
         {
             playerStatus.DestroyResetCooldown();
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+            other.gameObject.transform.GetComponent<ChangeFatPlus>().ChangeFatType();
             GetComponent<CircleCollider2D>().enabled = false;
         }
         else if(other.gameObject.CompareTag("Enemy"))
