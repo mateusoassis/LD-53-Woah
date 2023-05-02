@@ -474,6 +474,7 @@ MonoBehaviour:
   menuName: 1_MenuScene
   gameTutorialStartName: 2_GameScene1
   nextScene: 3_GameScene2
+  playerInfo: {fileID: 11400000, guid: 8221b8ac9906fa948a8ea1568e271f58, type: 2}
 --- !u!114 &8149460357710109420
 MonoBehaviour:
   m_ObjectHideFlags: 0

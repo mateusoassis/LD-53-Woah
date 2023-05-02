@@ -11,6 +11,8 @@ public class SceneChanger : MonoBehaviour
     [SerializeField] private string menuName;
     [SerializeField] private string gameTutorialStartName;
     [SerializeField] private string nextScene;
+    [SerializeField] private PlayerInfo playerInfo;
+    [SerializeField] private int subtract;
 
     // 0 = intro
     // 1 = menu
@@ -19,6 +21,10 @@ public class SceneChanger : MonoBehaviour
     void Awake()
     {
         currentIndex = SceneManager.GetActiveScene().buildIndex;
+        if(playerInfo.levelsUnlocked < currentIndex - subtract)
+        {
+            playerInfo.levelsUnlocked = currentIndex - subtract;
+        }
     }
 
     public void SwapToMenu()

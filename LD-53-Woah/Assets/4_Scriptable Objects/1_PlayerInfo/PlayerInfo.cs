@@ -12,6 +12,8 @@ public class PlayerInfo : ScriptableObject
     [Range(0,1)]
     public float sfxVolume;
 
+    public bool seenTutorial;
+
     [Header("levels unlocked")]
     public int levelsUnlocked;
 
