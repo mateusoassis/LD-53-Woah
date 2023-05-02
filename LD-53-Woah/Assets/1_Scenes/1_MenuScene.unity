@@ -1276,7 +1276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &372934743
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1944,8 +1944,7 @@ MonoBehaviour:
   - 2_GameScene1
   - 3_GameScene2
   - 4_GameScene3
-  - 5_GameScene4
-  - 6_GameScene5
+  - 5_GameSceneFINAL
   playerInfo: {fileID: 11400000, guid: 8221b8ac9906fa948a8ea1568e271f58, type: 2}
 --- !u!1 &590779048
 GameObject:
