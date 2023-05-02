@@ -7491,6 +7491,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8149460357710109421, guid: 38a2d862be7ca4f45a86f29f87c0c9db, type: 3}
+      propertyPath: nextScene
+      value: 5_GameScene4
+      objectReference: {fileID: 0}
     - target: {fileID: 8149460357954654219, guid: 38a2d862be7ca4f45a86f29f87c0c9db, type: 3}
       propertyPath: m_Sprite
       value: 

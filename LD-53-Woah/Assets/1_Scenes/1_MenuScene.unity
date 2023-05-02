@@ -1946,10 +1946,6 @@ MonoBehaviour:
   - 4_GameScene3
   - 5_GameScene4
   - 6_GameScene5
-  - 7_GameScene6
-  - 8_GameScene7
-  - 9_GameScene8
-  - 10_GameScene9
   playerInfo: {fileID: 11400000, guid: 8221b8ac9906fa948a8ea1568e271f58, type: 2}
 --- !u!1 &590779048
 GameObject:

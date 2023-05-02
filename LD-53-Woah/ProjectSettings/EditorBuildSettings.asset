@@ -14,22 +14,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1_Scenes/2_GameScene1.unity
     guid: d05374f1fdc732442b77898db0d21816
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/1_Scenes/3_GameScene2.unity
+    guid: f16ed669621255a4d926e6b2289180f8
+  - enabled: 1
+    path: Assets/1_Scenes/4_GameScene3.unity
+    guid: e96ba7206351123459ae5179023d8272
+  - enabled: 1
+    path: Assets/1_Scenes/5_GameSceneFINAL.unity
+    guid: 1ce69e9907c4a764285f7301e4b66dab
+  - enabled: 1
+    path: Assets/1_Scenes/TutorialScene.unity
+    guid: 2b62a4cf61529554daf52eec9c71e2c7
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1

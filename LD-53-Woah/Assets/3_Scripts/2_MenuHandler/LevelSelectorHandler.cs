@@ -16,7 +16,15 @@ public class LevelSelectorHandler : MonoBehaviour
 
     public void PlayMaxLevel()
     {
-        SceneManager.LoadScene(levelNames[playerInfo.levelsUnlocked]);
+        if(playerInfo.seenTutorial)
+        {
+            SceneManager.LoadScene(levelNames[playerInfo.levelsUnlocked]);
+        }
+        else
+        {
+            SceneManager.LoadScene("TutorialScene");
+        }
+        
     }
 
     public void OpenLevelSelector()
